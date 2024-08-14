@@ -1,0 +1,93 @@
+body > div > div.sub-header > ul {
+    height: 60px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+ul a {
+    text-decoration: none;
+    color: white;
+   
+   
+   
+}
+.gradient-background {
+    background: linear-gradient(300deg, #5bbb68, #16bb24, #179fdf);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+.container {
+   
+    width: 85vmin;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+     border: 20 px solid green;
+     border-radius: 8PX;
+     box-shadow:  10PX 25PX 30PX rgba(0, 0,0, 0.3);
+     overflow: hidden;
+}
+.image-slider {
+    width: 100%;
+    display: flex;
+    animation: slide 10s infinite;
+    
+}
+img {
+    width: 100%;
+}
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+
+.tab-content {
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 1px 5px 0 rgba(45, 241, 27, 0.02);
+    background-color: #FFF;
+    border: 1px solid #EEE;
+    border-top: 0;
+    padding: 15px;
+}
+
+

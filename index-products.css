@@ -1,0 +1,66 @@
+body > div.sub-header > ul {
+  width: 100%;
+    height: 60px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #5bbb68, #16bb24, #179fdf);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  body > div.sticky-top > div > div > ul {
+    height: 60px;
+    display: flex;
+      align-items: center;
+      justify-content: center;
+     
+  }
+
+
+
+ul a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(14, 121, 221);
+    padding: 5PX;
+    border-radius: 5PX;
+    margin: 30px;
+   
+   
+}
+
+.products {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+  }
+  .products img {
+    
+    width: 100%;
+    height: 100%;
+    transition: transform .2s;
+    border-radius: 5px;
+  }
+  .products img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
