@@ -1,0 +1,8 @@
+.container .image-slider{
+    &:hover {
+        animation-play-state: paused;
+      }
+}
+.container .image-slider{
+    cursor: pointer;
+}
